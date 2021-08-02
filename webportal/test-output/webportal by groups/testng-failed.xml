@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [webportal by groups]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="GRP-user-registration(failed)">
+    <groups>
+      <run>
+        <include name="user-registration"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="ui.BeforeAfterClass">
+        <methods>
+          <include name="bTest"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- ui.BeforeAfterClass -->
+    </classes>
+  </test> <!-- GRP-user-registration(failed) -->
+</suite> <!-- Failed suite [webportal by groups] -->
